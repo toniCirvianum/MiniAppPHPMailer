@@ -29,7 +29,7 @@
             <nav class="d-flex gap-3 mb-3">
                 <a href="/">Inici</a>
                 <a href="/login">Login</a>
-                <a href="/register">Register</a>
+                <a href="#">Register</a>
                 <a href="/test-mailer">Prova de correu</a>
             </nav>
         </header>
