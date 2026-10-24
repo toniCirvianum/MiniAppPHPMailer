@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Si el recurs demanat existeix físicament (CSS, imatges, etc.),
+# Apache el serveix directament.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# La resta de peticions passen per index.php.
+RewriteRule ^ index.php [QSA,L]
