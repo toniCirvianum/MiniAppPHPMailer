@@ -17,10 +17,6 @@ class UserController extends Controller
 
     public function authenticate()
     {
-        // if (!$this->validCsrf()) {
-        //     $this->csrfError();
-        //     return;
-        // }
         //el trim elimina els espais
         $username = trim($_POST['username']) ?? '';
         $password = $_POST['password'] ?? '';
@@ -44,11 +40,6 @@ class UserController extends Controller
 
     public function logout()
     {
-        // if (!$this->validCsrf()) {
-        //     $this->csrfError();
-        //     return;
-        // }
-
         if ($this->isAuthenticated()) {
             $u = new User;
             $u->destroyUserSession();
