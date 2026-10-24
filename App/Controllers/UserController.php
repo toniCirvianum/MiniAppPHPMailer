@@ -55,9 +55,11 @@ class UserController extends Controller
 
     public function register()
     {
-        $this->render('users/register', [
-            'title' => "Crear nou usuari",
-            'message' => "Cal implementar form del register i enviar a un metode al Usercontroller per exemple store"
-        ]);
+
+    }
+
+    public function store()
+    {
+
     }
 }

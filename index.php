@@ -32,7 +32,6 @@ $router->delete('/products/{id}', [ProductController::class, 'destroy']);//elimi
 //rute de usuari sense protegir
 $router->get('/login', [UserController::class, 'index']); //mostra form de login
 $router->post('/login', [UserController::class, 'authenticate']); //realitza logica del login
-$router->get('/register',[UserController::class,'register']); //Crea la vista del register
 
 //Rutes usuari protegides
 $router->get('/logout',[UserController::class,'logout']);
